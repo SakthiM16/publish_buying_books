@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Signup</title>
+	<meta charset="utf-8">
+  	<meta http-equiv="content-type" content="text/html;charset-utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+  	<link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+
+  	<link rel="stylesheet" type="text/css" href="signup1.css">
+
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<p>
+ To create a new account you can signup here.<br>You can check for other details in left menu of home page
+<button type="submit" colour="gray"><h4 class="text-center"><a href="homepage.html">HomePage</a></h4></button>
+		
+</p>
+<form class="pure-form">
+<fieldset>
+
+<div class="container">
+
+	<div class="col-md-6">
+		<h1 class="text-center">SignUp</h1>
+
+		<input type="text" class="form-control" id="Uname" placeholder="Enter Username" required="required">
+
+		<input type="Email" class="form-control" id="email" placeholder="Enter Email" required="required">
+
+		<input type="text" class="form-control" id="phno" placeholder="Enter Phone number">
+
+		<input type="password" class="form-control" id="pass" placeholder="Enter Password">
+		<input type="password" class="form-control" id="cpass" placeholder="Confirm Password">
+		<div class="radio">
+			<font face="arial" size="4" color="White">Gender:&nbsp;&nbsp;&nbsp;&nbsp;</font>
+			<font face="arial" size="4" color="pink"><label><input type="radio" name="optradio">Male</label>&nbsp;&nbsp;&nbsp;&nbsp;</font>
+			<font face="arial" size="4" color="pink"><label><input type="radio" name="optradio">FeMale</label>&nbsp;&nbsp;&nbsp;&nbsp;</font>
+			<font face="arial" size="4" color="pink"><label><input type="radio" name="optradio">Others</label>&nbsp;&nbsp;&nbsp;&nbsp;</font>
+			
+			<button href="clientlogin.html" type="submit"><h4 class="text-center">Submit</h4></button>
+			
+		  
+
+</div>
+</div>
+</div></fieldset></form>
+
+<script>
+
+    var pass = document.getElementById("pass")
+      , cpass = document.getElementById("cpass");
+    
+    function validatePassword(){
+      if(pass.value != cpass.value) {
+        cpass.setCustomValidity("Passwords Don't Match");
+      } else {
+        cpass.setCustomValidity('');
+      }
+    }
+    
+    pass.onchange = validatePassword;
+    cpass.onkeyup = validatePassword;
+    </Script>
+    
+	</body>
+	
+	</html>
