@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+
+  <meta http-equiv="content-type" content="text/html;charset-utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+  <style>
+
+    body{
+      background-image: url(7.jpg);
+      background-size: cover;
+    }
+      .carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+  /*margin:auto;
+  */  width: 200%;
+  }
+
+    .carousel-inner > .item > img{
+    margin:auto;
+    width:100%
+  }
+html{
+  overflow-y: scroll;
+}
+  .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-y: hidden;
+  transition: 0.10s;
+  padding-top: 100px;
+}
+.glyphicon{
+  color:yellow;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 10px;
+  color:yellow;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 5px ;
+  border: 2px;
+}
+footer{
+  text-align: center;
+  padding: 3px;
+  background-color: yellow;
+  color:white;
+}
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 250px) {
+  .sidebar {padding-top: 20px;}
+  .sidebar a {font-size: 18px;}
+}
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+.navbar{
+  position: fixed;
+}
+
+  </style>
+</head>
+<body>
+<div class="container">
+
+  
+  
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <ul class="nav navbar-nav navbar-left">
+
+      <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="addbooks.html">PublishBooks</a>
+          <a href="editbook.html">Edit Books</a>
+          <a href="viewbook.html">View Books</a>
+          <a href="magazine.html">View Magazine Books</a>
+          
+          <a href="homepage.html">HomePage</a>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ PUBLISH</button>  
+      </div>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+</script>
+
+</ul>
+</nav>
+
+
+</div>
+</body>
+</html>

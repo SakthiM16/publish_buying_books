@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LOGIN</title>
+    <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+  <link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  <meta http-equiv="content-type" content="text/html;charset-utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <h1 class="text-center">Login Page</h1>
+
+          <img src="hd4.jpg">
+          <!-- Form controls automatically receive some global styling with Bootstrap: All textual <input> , <textarea> , and <select> elements with class . form-control have a width of 100%. -->
+            
+		  <input type="Email" class="form-control" id="email" placeholder="Enter Email" required="required">  
+        
+               <input type="text" class="form-control" id="User" placeholder="Enter Name" required="required">
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" required="required"><br>
+
+              <input type="checkbox" onclick="ckbox()"><font color="white">Show Password</font><br>
+
+              <script>
+                function ckbox(){
+                  var box=document.getElementById("pwd");
+                  if(box.type==="password"){
+                    box.type="text";
+                  }else{
+                    box.type="password";
+                  }
+
+                }
+              </script>
+              <div class="btn btn-info" onclick="validate()">Login</div>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+              <p class="text-center"><a href="homepage.html"><font size="4" color="yellow">Homepage</font></a></p>
+              <p class="text-center"><a href="forgotpassword.html"><b><font color="yellow">Forgot Password?</font></b></a></p>
+          <!-- <p class="text-center"><font color="yellow"><b>New User?</b></font><a href="signup.html"><font color="pink"><b>SignUp</b></font></a></p>
+ -->
+
+
+      </div>
+
+  </div>
+  </div>
+  <script>
+       function validate() {
+            var Email = document.getElementById("email").value;
+            var pwd = document.getElementById("pwd").value;
+            if (email == null || email == "") {
+                alert("Please enter the Email.");
+                return false;
+            }
+            if (pwd == null || pwd == "") {
+                alert("Please enter the password.");
+                return false;
+            }
+            
+            alert('<a href="homepage.html">');
+            
+            
+        } 
+  </script>
+ 
+  </body>
+  </html>
