@@ -1,0 +1,53 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-image: url(hd1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: new time roman;
+}
+h1{
+	font-size: 50px;
+	color:white;
+}
+img{
+	width: 130px;
+	height: 100px;
+	border-radius: 100px;
+	margin-left: 200px;
+}
+img:hover{
+	-webkit- transform: scale(1.8);
+}
+.form-control{
+	background: transparent;
+	border-radius: 0px;
+	border: 0px;
+	border-bottom: 1px solid yellow;
+	font-size: 21px;
+	margin-top: 18px;
+	padding: 23px;
+	color:white;
+}
+.btn-info{
+	margin-top: 20px;
+	font-size: 18px;
+	width: 150px;
+	background: transparent;
+}
+
+.btn-success{
+	margin-top: 20px;
+	font-size: 21px;
+	width: 150px;
+	background: transparent;
+}
+.col-md-6{
+	box-shadow: -1px 1px 50px 10px white;
+	border-radius: 0px 100px 0px 100px;
+	margin-top: 60px;
+	height: 480px;
+	background:rgba(0,0,0,0.4);
+}

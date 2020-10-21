@@ -1,0 +1,51 @@
+h1{
+	font-size: 50px;
+	color:white;
+
+
+}
+
+.col-md-6{
+	box-shadow: 5px 5px 20px 5px pink;
+	border-radius: 100px 100px 50px 150px;
+	margin-top: 40px;
+	height: 580px;
+	width: 800px;
+	background:rgba(0,0,0,0.4);
+}
+
+.form-control{
+	background: transparent;
+	border-bottom: 10px solid yellow;
+	margin-top: 20px;/*margin top is space between two inputs*/
+	padding: 23px;
+	color:pink;
+
+}
+body{
+	background-image: url(hd2.jpg);
+	background-size: cover;
+
+	background-attachment: fixed;
+	font-family: new time roman;
+}
+button{
+	border-radius: 50px 50px 50px 50px;
+	width: 200px;
+	height: 50px;
+	background-color: pink;
+	
+	
+}
+p{
+
+	height: 200px;
+	width: 500px;
+	color:yellow;
+	float: right;
+margin-top: 10px;
+
+	padding-right: 250px;
+	padding-top: 150px;
+
+}
